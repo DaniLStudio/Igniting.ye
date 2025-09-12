@@ -1,5 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
-import { Database } from '@/types/database';
+import { Database, TicketType, PromoCode, OrderInsert, OrderItemInsert, TicketInsert } from '@/types/database';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
@@ -43,9 +43,10 @@ export const checkTicketAvailability = async (ticketTypeId: string, quantity: nu
     .from('ticket_types')
     .select('quantity_available, quantity_sold')
     .eq('id', ticketTypeId)
-    .single();
+    .single() as { data: Pick<TicketType, 'quantity_available' | 'quantity_sold'> | null; error: Error | null };
     
   if (error) throw error;
+  if (!data) return false;
   
   const available = data.quantity_available - data.quantity_sold;
   return available >= quantity;
@@ -69,7 +70,7 @@ export const validatePromoCode = async (code: string, eventId?: string) => {
     .select('*')
     .eq('code', code.toUpperCase())
     .eq('is_active', true)
-    .single();
+    .single() as { data: PromoCode | null; error: Error | null };
 
   if (error || !data) {
     return { isValid: false, error: 'Invalid promo code' };
@@ -101,10 +102,11 @@ export const validatePromoCode = async (code: string, eventId?: string) => {
   return { isValid: true, promoCode: data };
 };
 
-export const createOrder = async (orderData: Database['public']['Tables']['orders']['Insert']) => {
+export const createOrder = async (orderData: OrderInsert) => {
   const { data, error } = await supabase
     .from('orders')
-    .insert(orderData)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    .insert(orderData as any)
     .select()
     .single();
     
@@ -112,20 +114,22 @@ export const createOrder = async (orderData: Database['public']['Tables']['order
   return data;
 };
 
-export const createOrderItems = async (orderItems: Database['public']['Tables']['order_items']['Insert'][]) => {
+export const createOrderItems = async (orderItems: OrderItemInsert[]) => {
   const { data, error } = await supabase
     .from('order_items')
-    .insert(orderItems)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    .insert(orderItems as any)
     .select();
     
   if (error) throw error;
   return data;
 };
 
-export const createTickets = async (tickets: Database['public']['Tables']['tickets']['Insert'][]) => {
+export const createTickets = async (tickets: TicketInsert[]) => {
   const { data, error } = await supabase
     .from('tickets')
-    .insert(tickets)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    .insert(tickets as any)
     .select();
     
   if (error) throw error;
@@ -133,7 +137,8 @@ export const createTickets = async (tickets: Database['public']['Tables']['ticke
 };
 
 export const updateOrderStatus = async (orderId: string, status: Database['public']['Tables']['orders']['Row']['status']) => {
-  const { data, error } = await supabase
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const { data, error } = await (supabase as any)
     .from('orders')
     .update({ status, updated_at: new Date().toISOString() })
     .eq('id', orderId)

@@ -140,7 +140,7 @@ export function Header() {
                 <div
                   key={item.name}
                   className="relative"
-                  onMouseEnter={() => item.submenu && setActiveSubmenu(item.name)}
+                  onMouseEnter={() => ('submenu' in item && item.submenu) && setActiveSubmenu(item.name)}
                   onMouseLeave={() => setActiveSubmenu(null)}
                 >
                   <Link
@@ -158,7 +158,7 @@ export function Header() {
                   </Link>
 
                   {/* Desktop Submenu */}
-                  {item.submenu && (
+                  {'submenu' in item && item.submenu && (
                     <AnimatePresence>
                       {activeSubmenu === item.name && (
                         <motion.div
@@ -175,12 +175,12 @@ export function Header() {
                               className={cn(
                                 'block px-4 py-3 text-sm transition-colors',
                                 'hover:bg-primary-300/10 hover:text-primary-300',
-                                subitem.featured &&
+                                'featured' in subitem && subitem.featured &&
                                   'text-primary-300 font-semibold bg-primary-300/5'
                               )}
                             >
                               {subitem.name}
-                              {subitem.featured && (
+                              {'featured' in subitem && subitem.featured && (
                                 <span className="ml-2 text-xs bg-primary-300 text-white px-2 py-0.5 rounded-full">
                                   Featured
                                 </span>
@@ -336,7 +336,7 @@ export function Header() {
                         >
                           {item.name}
                         </Link>
-                        {item.submenu && (
+                        {'submenu' in item && item.submenu && (
                           <div className="ml-4 space-y-1">
                             {item.submenu.map((subitem) => (
                               <Link
@@ -345,13 +345,13 @@ export function Header() {
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className={cn(
                                   'block py-2 text-sm transition-colors',
-                                  subitem.featured
+                                  'featured' in subitem && subitem.featured
                                     ? 'text-primary-300 font-semibold'
                                     : 'text-neutral-600 dark:text-neutral-400 hover:text-primary-300'
                                 )}
                               >
                                 {subitem.name}
-                                {subitem.featured && (
+                                {'featured' in subitem && subitem.featured && (
                                   <span className="ml-2 text-xs bg-primary-300 text-white px-2 py-0.5 rounded-full">
                                     Featured
                                   </span>

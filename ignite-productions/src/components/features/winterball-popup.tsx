@@ -101,7 +101,7 @@ export function WinterballPopup({
       scale: 1,
       y: 0,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         damping: 25,
         stiffness: 200,
         duration: 0.6,
@@ -125,7 +125,7 @@ export function WinterballPopup({
       transition: {
         duration: 3,
         repeat: Infinity,
-        ease: "easeInOut",
+        ease: "easeInOut" as const,
       }
     }
   };
@@ -137,7 +137,7 @@ export function WinterballPopup({
       transition: {
         duration: 2,
         repeat: Infinity,
-        ease: "easeInOut",
+        ease: "easeInOut" as const,
       }
     }
   };

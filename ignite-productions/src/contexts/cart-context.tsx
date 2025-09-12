@@ -3,6 +3,7 @@
 import { createContext, useContext, useReducer, useEffect, ReactNode } from 'react';
 import { toast } from 'sonner';
 import { supabase } from '@/lib/supabase';
+import { PromoCode as DatabasePromoCode, TicketType } from '@/types/database';
 
 export interface CartItem {
   id: string;
@@ -100,7 +101,7 @@ function cartReducer(state: CartState, action: CartAction): CartState {
       const newItem: CartItem = {
         ...action.payload,
         id: `${action.payload.eventId}-${action.payload.ticketTypeId}-${Date.now()}`,
-        totalPrice: calculateItemTotal(action.payload),
+        totalPrice: calculateItemTotal({ ...action.payload, id: `${action.payload.eventId}-${action.payload.ticketTypeId}-${Date.now()}` }),
       };
       
       // Check if similar item exists and merge quantities
@@ -315,7 +316,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
         .select('*')
         .eq('code', code.toUpperCase())
         .eq('is_active', true)
-        .single();
+        .single() as { data: DatabasePromoCode | null; error: Error | null };
 
       if (error || !promoData) {
         toast.error('Invalid promo code');
@@ -347,7 +348,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
         code: promoData.code,
         discountType: promoData.discount_type,
         discountValue: promoData.discount_value,
-        minOrderAmount: promoData.min_order_amount,
+        minOrderAmount: promoData.min_order_amount ?? undefined,
         isValid: true,
       };
 
@@ -381,7 +382,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
         .from('ticket_types')
         .select('quantity_available, quantity_sold')
         .eq('id', ticketTypeId)
-        .single();
+        .single() as { data: Pick<TicketType, 'quantity_available' | 'quantity_sold'> | null; error: Error | null };
 
       if (error || !data) {
         return false;
