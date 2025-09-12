@@ -157,20 +157,23 @@
   
   /* Button styles inspired by Envy */
   .btn-primary {
-    @apply bg-gradient-to-r from-primary-500 to-primary-400 text-white font-accent font-semibold px-8 py-4 rounded-full;
+    @apply bg-gradient-to-r from-primary-500 to-primary-400 text-white font-semibold px-8 py-4 rounded-full;
     @apply shadow-luxury hover:shadow-glow-gold transition-all duration-300;
     @apply hover:scale-105 active:scale-95;
+    font-family: var(--font-family-accent), sans-serif;
   }
   
   .btn-secondary {
-    @apply bg-transparent border-2 border-primary-300 text-primary-300 font-accent font-semibold px-8 py-4 rounded-full;
+    @apply bg-transparent border-2 border-primary-300 text-primary-300 font-semibold px-8 py-4 rounded-full;
     @apply hover:bg-primary-300 hover:text-white transition-all duration-300;
     @apply hover:shadow-glow-gold;
+    font-family: var(--font-family-accent), sans-serif;
   }
   
   .btn-ghost {
-    @apply bg-white/10 backdrop-blur-sm text-white font-accent font-semibold px-6 py-3 rounded-full;
+    @apply bg-white/10 backdrop-blur-sm text-white font-semibold px-6 py-3 rounded-full;
     @apply border border-white/20 hover:bg-white/20 transition-all duration-300;
+    font-family: var(--font-family-accent), sans-serif;
   }
   
   /* Card components */
