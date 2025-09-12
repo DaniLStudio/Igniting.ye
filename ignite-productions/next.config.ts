@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  assetPrefix: process.env.NODE_ENV === 'production' 
+  assetPrefix: process.env.NODE_ENV === 'production'
     ? `https://danilstudio.github.io/Igniting.ye`
     : '',
 };
