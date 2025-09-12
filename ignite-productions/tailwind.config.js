@@ -96,11 +96,18 @@ module.exports = {
       },
       backdropBlur: {
         xs: '2px',
+        sm: '4px',
+        md: '8px',
+        lg: '12px',
+        xl: '16px',
+        '2xl': '24px',
+        '3xl': '40px',
       },
       boxShadow: {
         'luxury': '0 25px 50px -12px rgba(212, 175, 55, 0.25)',
         'glow-gold': '0 0 20px rgba(212, 175, 55, 0.5)',
         'glow-purple': '0 0 20px rgba(45, 27, 105, 0.5)',
+        '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
       },
     },
   },
