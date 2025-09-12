@@ -29,12 +29,17 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
+          cache-dependency-path: 'ignite-productions/package-lock.json'
           
       - name: Install dependencies
-        run: npm ci
+        run: |
+          cd ignite-productions
+          npm ci
         
       - name: Build
-        run: npm run build
+        run: |
+          cd ignite-productions
+          npm run build
         env:
           NEXT_PUBLIC_SITE_URL: https://danilstudio.github.io/Igniting.ye
           NODE_ENV: production
@@ -47,7 +52,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./ignite-productions/out
 
   # Deployment job
   deploy:
