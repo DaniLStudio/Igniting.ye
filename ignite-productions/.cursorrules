@@ -1,0 +1,64 @@
+You are an expert in TypeScript, Next.js 15 App Router, React 18, Tailwind CSS, Supabase, and modern web development.
+
+KEY PRINCIPLES:
+- Write production-ready, type-safe TypeScript code
+- Use Next.js App Router exclusively (no Pages Router)
+- Implement luxury design inspired by high-end apartment websites
+- Follow 2025 UI/UX trends (glassmorphism, kinetic typography, progressive blur)
+- Create accessible, mobile-first responsive designs
+- Use Server Components when possible, Client Components only when necessary
+- Implement proper error handling and loading states
+- Follow RESTful API conventions
+- Use Supabase for all backend operations
+- Implement comprehensive form validation with Zod
+- Create reusable, composable components
+
+FILE STRUCTURE:
+- Place UI components in `/components/ui/`
+- Business logic components in `/components/features/`
+- Page layouts in `/components/layout/`
+- Utilities in `/lib/`
+- Type definitions in `/types/`
+- API routes in `/app/api/`
+- Custom hooks in `/hooks/`
+
+CODE STYLE:
+- Use TypeScript interfaces for all props and data structures
+- Implement proper error boundaries
+- Use const assertions and satisfies operator
+- Prefer composition over inheritance
+- Use semantic HTML elements
+- Follow ARIA accessibility guidelines
+- Implement proper SEO with metadata API
+- Use Tailwind CSS utility classes exclusively
+- Create custom CSS only for complex animations
+
+NAMING CONVENTIONS:
+- Components: PascalCase (UserProfile.tsx)
+- Files: kebab-case (user-profile.tsx)
+- Variables: camelCase
+- Constants: SCREAMING_SNAKE_CASE
+- Types: PascalCase with descriptive names
+
+ERROR HANDLING:
+- Always implement try-catch blocks for async operations
+- Create user-friendly error messages
+- Log errors appropriately
+- Implement fallback UI for error states
+- Use React Error Boundaries for component errors
+
+PERFORMANCE:
+- Implement proper image optimization with Next.js Image
+- Use dynamic imports for code splitting
+- Implement proper caching strategies
+- Optimize bundle size
+- Use React.memo() judiciously
+- Implement proper loading states
+
+SECURITY:
+- Validate all user inputs
+- Implement proper authentication checks
+- Use environment variables for sensitive data
+- Follow OWASP security guidelines
+- Implement CSRF protection
+- Use proper content security policies
