@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Calendar, MapPin, Clock, Users, Sparkles, Snowflake } from 'lucide-react';
 import Link from 'next/link';
-import { cn } from '@/lib/utils';
 import Cookies from 'js-cookie';
 
 interface WinterballPopupProps {
@@ -25,7 +24,7 @@ export function WinterballPopup({
   earlyBirdUntil = "2025-01-15T23:59:59"
 }: WinterballPopupProps) {
   const [isVisible, setIsVisible] = useState(false);
-  const [showSnowflakes, setShowSnowflakes] = useState(true);
+  const [showSnowflakes] = useState(true);
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0 });
 
   const POPUP_COOKIE_NAME = 'winterball-popup-dismissed';
@@ -247,7 +246,7 @@ export function WinterballPopup({
                 transition={{ delay: 0.3, type: "spring", damping: 20 }}
                 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4"
               >
-                You're Invited to
+                You&apos;re Invited to
                 <span className="block bg-gradient-to-r from-blue-300 via-white to-blue-300 bg-clip-text text-transparent">
                   Winter Ball 2025
                 </span>
@@ -392,7 +391,7 @@ export function WinterballPopup({
               className="text-center mt-6"
             >
               <p className="text-blue-200 text-sm">
-                Don't miss this special evening of fellowship and celebration
+                Don&apos;t miss this special evening of fellowship and celebration
               </p>
             </motion.div>
           </div>

@@ -100,7 +100,7 @@ export function HeroSection({
       opacity: 1,
       rotateX: 0,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         damping: 20,
         stiffness: 100,
         duration: 1.2,
@@ -119,7 +119,7 @@ export function HeroSection({
       opacity: 1,
       scale: 1,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         damping: 25,
         stiffness: 200,
         duration: 0.8,
@@ -146,7 +146,7 @@ export function HeroSection({
       opacity: 1,
       scale: 1,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         damping: 20,
         stiffness: 100,
         delay: 0.8,
@@ -320,7 +320,7 @@ export function HeroSection({
           variants={statsVariants}
           className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 max-w-4xl mx-auto"
         >
-          {stats.map((stat, index) => (
+          {stats.map((stat) => (
             <motion.div
               key={stat.label}
               className="text-center group"

@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  ShoppingCart, 
+  ShoppingCart as ShoppingCartIcon, 
   Plus, 
   Minus, 
   Trash2, 
@@ -14,7 +14,6 @@ import {
   AlertCircle
 } from 'lucide-react';
 import { useCart } from '@/contexts/cart-context';
-import { cn } from '@/lib/utils';
 import Link from 'next/link';
 
 interface ShoppingCartProps {
@@ -31,7 +30,6 @@ export function ShoppingCart({ isOpen, onClose }: ShoppingCartProps) {
     taxes,
     total,
     promoCode,
-    isLoading,
     expiresAt,
     updateQuantity,
     removeItem,
@@ -64,7 +62,7 @@ export function ShoppingCart({ isOpen, onClose }: ShoppingCartProps) {
     closed: {
       x: '100%',
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         damping: 40,
         stiffness: 300,
       },
@@ -72,7 +70,7 @@ export function ShoppingCart({ isOpen, onClose }: ShoppingCartProps) {
     open: {
       x: 0,
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         damping: 40,
         stiffness: 300,
       },
@@ -118,7 +116,7 @@ export function ShoppingCart({ isOpen, onClose }: ShoppingCartProps) {
         <div className="flex items-center justify-between p-6 border-b border-neutral-200 dark:border-neutral-700">
           <div className="flex items-center space-x-3">
             <div className="p-2 bg-primary-300/10 rounded-lg">
-              <ShoppingCart className="w-5 h-5 text-primary-300" />
+              <ShoppingCartIcon className="w-5 h-5 text-primary-300" />
             </div>
             <div>
               <h2 className="text-xl font-serif font-bold">Shopping Cart</h2>
@@ -152,7 +150,7 @@ export function ShoppingCart({ isOpen, onClose }: ShoppingCartProps) {
           {items.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full p-6 text-center">
               <div className="p-4 bg-neutral-100 dark:bg-neutral-800 rounded-full mb-4">
-                <ShoppingCart className="w-8 h-8 text-neutral-400" />
+                <ShoppingCartIcon className="w-8 h-8 text-neutral-400" />
               </div>
               <h3 className="text-lg font-medium mb-2">Your cart is empty</h3>
               <p className="text-neutral-600 dark:text-neutral-400 mb-6">

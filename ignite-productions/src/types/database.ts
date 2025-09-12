@@ -37,7 +37,7 @@ export interface Database {
           zip_code: string;
           capacity: number;
           description: string | null;
-          amenities: any | null;
+          amenities: Record<string, unknown> | null;
           google_maps_url: string | null;
           image_urls: string[] | null;
           contact_email: string | null;
@@ -52,7 +52,7 @@ export interface Database {
           zip_code: string;
           capacity: number;
           description?: string;
-          amenities?: any;
+          amenities?: Record<string, unknown>;
           google_maps_url?: string;
           image_urls?: string[];
           contact_email?: string;
@@ -66,7 +66,7 @@ export interface Database {
           zip_code?: string;
           capacity?: number;
           description?: string;
-          amenities?: any;
+          amenities?: Record<string, unknown>;
           google_maps_url?: string;
           image_urls?: string[];
           contact_email?: string;
@@ -91,7 +91,7 @@ export interface Database {
           dress_code: string | null;
           age_restriction: number | null;
           special_instructions: string | null;
-          metadata: any | null;
+          metadata: Record<string, unknown> | null;
           created_at: string;
           updated_at: string;
         };
@@ -111,7 +111,7 @@ export interface Database {
           dress_code?: string;
           age_restriction?: number;
           special_instructions?: string;
-          metadata?: any;
+          metadata?: Record<string, unknown>;
         };
         Update: {
           title?: string;
@@ -129,7 +129,7 @@ export interface Database {
           dress_code?: string;
           age_restriction?: number;
           special_instructions?: string;
-          metadata?: any;
+          metadata?: Record<string, unknown>;
         };
       };
       ticket_types: {
@@ -147,7 +147,7 @@ export interface Database {
           min_per_order: number;
           is_active: boolean;
           sort_order: number;
-          metadata: any | null;
+          metadata: Record<string, unknown> | null;
           created_at: string;
         };
         Insert: {
@@ -163,7 +163,7 @@ export interface Database {
           min_per_order?: number;
           is_active?: boolean;
           sort_order?: number;
-          metadata?: any;
+          metadata?: Record<string, unknown>;
         };
         Update: {
           name?: string;
@@ -177,7 +177,7 @@ export interface Database {
           min_per_order?: number;
           is_active?: boolean;
           sort_order?: number;
-          metadata?: any;
+          metadata?: Record<string, unknown>;
         };
       };
       promo_codes: {
@@ -242,7 +242,7 @@ export interface Database {
           billing_email: string;
           billing_name: string;
           billing_phone: string | null;
-          billing_address: any | null;
+          billing_address: Record<string, unknown> | null;
           special_requests: string | null;
           expires_at: string | null;
           paid_at: string | null;
@@ -266,7 +266,7 @@ export interface Database {
           billing_email: string;
           billing_name: string;
           billing_phone?: string;
-          billing_address?: any;
+          billing_address?: Record<string, unknown>;
           special_requests?: string;
           expires_at?: string;
           paid_at?: string;
@@ -288,7 +288,7 @@ export interface Database {
           billing_email?: string;
           billing_name?: string;
           billing_phone?: string;
-          billing_address?: any;
+          billing_address?: Record<string, unknown>;
           special_requests?: string;
           expires_at?: string;
           paid_at?: string;

@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone, Mail, Calendar } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -70,7 +69,7 @@ export function Header() {
       opacity: 0,
       x: '100%',
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         damping: 40,
         stiffness: 300,
       },
@@ -79,7 +78,7 @@ export function Header() {
       opacity: 1,
       x: 0,
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         damping: 40,
         stiffness: 300,
       },
@@ -97,7 +96,7 @@ export function Header() {
       y: 0,
       scale: 1,
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         damping: 20,
         stiffness: 300,
       },
