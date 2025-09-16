@@ -1,0 +1,106 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D1B69;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#412087;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6C44B1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0.6" />
+    </linearGradient>
+    <radialGradient id="lightGradient" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#2D1B69;stop-opacity:0.1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGradient)"/>
+  
+  <!-- Overlay light -->
+  <rect width="1200" height="800" fill="url(#lightGradient)"/>
+  
+  <!-- Decorative elements - chandeliers -->
+  <g opacity="0.4">
+    <!-- Chandelier 1 -->
+    <circle cx="200" cy="150" r="3" fill="url(#goldGradient)"/>
+    <circle cx="195" cy="160" r="2" fill="url(#goldGradient)"/>
+    <circle cx="205" cy="160" r="2" fill="url(#goldGradient)"/>
+    <circle cx="200" cy="170" r="2" fill="url(#goldGradient)"/>
+    
+    <!-- Chandelier 2 -->
+    <circle cx="1000" cy="120" r="3" fill="url(#goldGradient)"/>
+    <circle cx="995" cy="130" r="2" fill="url(#goldGradient)"/>
+    <circle cx="1005" cy="130" r="2" fill="url(#goldGradient)"/>
+    <circle cx="1000" cy="140" r="2" fill="url(#goldGradient)"/>
+  </g>
+  
+  <!-- Table silhouettes -->
+  <g opacity="0.6">
+    <!-- Table 1 -->
+    <ellipse cx="300" cy="500" rx="80" ry="40" fill="#1a0d3a"/>
+    <ellipse cx="300" cy="480" rx="80" ry="40" fill="#2a1a5a"/>
+    
+    <!-- Table 2 -->
+    <ellipse cx="600" cy="550" rx="100" ry="50" fill="#1a0d3a"/>
+    <ellipse cx="600" cy="530" rx="100" ry="50" fill="#2a1a5a"/>
+    
+    <!-- Table 3 -->
+    <ellipse cx="900" cy="480" rx="80" ry="40" fill="#1a0d3a"/>
+    <ellipse cx="900" cy="460" rx="80" ry="40" fill="#2a1a5a"/>
+  </g>
+  
+  <!-- People silhouettes -->
+  <g opacity="0.7">
+    <!-- Person 1 -->
+    <ellipse cx="280" cy="450" rx="15" ry="25" fill="#3a2a6a"/>
+    <ellipse cx="280" cy="420" rx="12" ry="20" fill="#4a3a7a"/>
+    
+    <!-- Person 2 -->
+    <ellipse cx="620" cy="500" rx="15" ry="25" fill="#3a2a6a"/>
+    <ellipse cx="620" cy="470" rx="12" ry="20" fill="#4a3a7a"/>
+    
+    <!-- Person 3 -->
+    <ellipse cx="880" cy="430" rx="15" ry="25" fill="#3a2a6a"/>
+    <ellipse cx="880" cy="400" rx="12" ry="20" fill="#4a3a7a"/>
+  </g>
+  
+  <!-- Floating sparkles -->
+  <g opacity="0.8">
+    <circle cx="150" cy="200" r="2" fill="url(#goldGradient)"/>
+    <circle cx="350" cy="180" r="1.5" fill="url(#goldGradient)"/>
+    <circle cx="500" cy="220" r="2" fill="url(#goldGradient)"/>
+    <circle cx="750" cy="190" r="1.5" fill="url(#goldGradient)"/>
+    <circle cx="950" cy="210" r="2" fill="url(#goldGradient)"/>
+    <circle cx="1100" cy="180" r="1.5" fill="url(#goldGradient)"/>
+    <circle cx="200" cy="350" r="1.5" fill="url(#goldGradient)"/>
+    <circle cx="400" cy="320" r="2" fill="url(#goldGradient)"/>
+    <circle cx="650" cy="340" r="1.5" fill="url(#goldGradient)"/>
+    <circle cx="850" cy="310" r="2" fill="url(#goldGradient)"/>
+    <circle cx="1050" cy="330" r="1.5" fill="url(#goldGradient)"/>
+  </g>
+  
+  <!-- Center focal point -->
+  <circle cx="600" cy="400" r="120" fill="none" stroke="url(#goldGradient)" stroke-width="2" opacity="0.3"/>
+  <circle cx="600" cy="400" r="80" fill="none" stroke="url(#goldGradient)" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Main title -->
+  <text x="600" y="380" text-anchor="middle" fill="#D4AF37" font-family="serif" font-size="48" font-weight="bold" opacity="0.9">
+    Luxury Formal Event
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="420" text-anchor="middle" fill="#D4AF37" font-family="serif" font-size="24" opacity="0.8">
+    Elegant Dining &amp; Celebration
+  </text>
+  
+  <!-- Decorative border elements -->
+  <g opacity="0.4">
+    <rect x="50" y="50" width="1100" height="2" fill="url(#goldGradient)"/>
+    <rect x="50" y="748" width="1100" height="2" fill="url(#goldGradient)"/>
+    <rect x="50" y="50" width="2" height="700" fill="url(#goldGradient)"/>
+    <rect x="1148" y="50" width="2" height="700" fill="url(#goldGradient)"/>
+  </g>
+</svg>

@@ -90,10 +90,10 @@ export function Footer() {
               <div className="w-10 h-10 bg-luxury-gradient rounded-xl shadow-luxury" />
               <div>
                 <h3 className="text-2xl font-serif font-bold gradient-text">
-                  Ignite
+                  Igniting.ye
                 </h3>
                 <p className="text-xs font-accent text-neutral-400 -mt-1">
-                  PRODUCTIONS
+                  CHRIST-CENTERED EXCELLENCE
                 </p>
               </div>
             </div>
@@ -112,7 +112,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3 text-neutral-300">
                 <Mail className="w-4 h-4 text-primary-300" />
-                <span className="text-sm">hello@igniteproductions.com</span>
+                <span className="text-sm">hello@igniting.ye</span>
               </div>
               <div className="flex items-center space-x-3 text-neutral-300">
                 <MapPin className="w-4 h-4 text-primary-300" />
@@ -231,7 +231,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="flex items-center space-x-2 text-neutral-400 text-sm">
-              <span>© {currentYear} Ignite Productions. All rights reserved.</span>
+              <span>© {currentYear} Igniting.ye. All rights reserved.</span>
               <Heart className="w-4 h-4 text-red-400" />
             </div>
 

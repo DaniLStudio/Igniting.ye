@@ -26,8 +26,8 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Ignite Productions | Christ-Centered Music & Events',
-    template: '%s | Ignite Productions',
+    default: 'Igniting.ye | Christ-Centered Music & Events',
+    template: '%s | Igniting.ye',
   },
   description: 'Professional music production, live events, and creative services rooted in Christian excellence. Serving churches, ministries, and individuals with world-class production.',
   keywords: [
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     'digital marketing',
     'ministry services',
   ],
-  authors: [{ name: 'Ignite Productions' }],
-  creator: 'Ignite Productions',
-  publisher: 'Ignite Productions',
+  authors: [{ name: 'Igniting.ye' }],
+  creator: 'Igniting.ye',
+  publisher: 'Igniting.ye',
   formatDetection: {
     email: false,
     address: false,
@@ -54,8 +54,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    siteName: 'Ignite Productions',
-    title: 'Ignite Productions | Christ-Centered Music & Events',
+    siteName: 'Igniting.ye',
+    title: 'Igniting.ye | Christ-Centered Music & Events',
     description: 'Professional music production, live events, and creative services rooted in Christian excellence.',
     url: '/',
     images: [
@@ -63,13 +63,13 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Ignite Productions - Christ-Centered Music & Events',
+        alt: 'Igniting.ye - Christ-Centered Music & Events',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ignite Productions | Christ-Centered Music & Events',
+    title: 'Igniting.ye | Christ-Centered Music & Events',
     description: 'Professional music production, live events, and creative services rooted in Christian excellence.',
     images: ['/og-image.jpg'],
   },

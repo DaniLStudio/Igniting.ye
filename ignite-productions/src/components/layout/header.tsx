@@ -14,7 +14,7 @@ const navigationItems = [
     href: '/services',
     submenu: [
       { name: 'Live Shows & Concerts', href: '/services/live-shows' },
-      { name: 'Music Production', href: '/services/production' },
+      { name: 'Video Production', href: '/services/video-production' },
       { name: 'Event Planning', href: '/services/events' },
       { name: 'Digital Marketing', href: '/services/marketing' },
     ]
@@ -29,6 +29,7 @@ const navigationItems = [
       { name: 'Past Events', href: '/events/past' },
     ]
   },
+  { name: 'Media', href: '/media' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
 ] as const;
@@ -126,10 +127,10 @@ export function Header() {
               </div>
               <div>
                 <h1 className="text-2xl font-serif font-bold gradient-text">
-                  Ignite
+                  Igniting.ye
                 </h1>
                 <p className="text-xs font-accent text-neutral-600 dark:text-neutral-400 -mt-1">
-                  PRODUCTIONS
+                  CHRIST-CENTERED EXCELLENCE
                 </p>
               </div>
             </Link>
@@ -212,7 +213,7 @@ export function Header() {
                   <span>(123) 456-7890</span>
                 </a>
                 <a
-                  href="mailto:hello@igniteproductions.com"
+                  href="mailto:hello@igniting.ye"
                   className={cn(
                     'flex items-center space-x-2 hover:text-primary-300 transition-colors',
                     isScrolled
@@ -221,7 +222,7 @@ export function Header() {
                   )}
                 >
                   <Mail className="w-4 h-4" />
-                  <span>hello@igniteproductions.com</span>
+                  <span>hello@igniting.ye</span>
                 </a>
               </div>
 
@@ -309,10 +310,10 @@ export function Header() {
                     <div className="w-8 h-8 bg-luxury-gradient rounded-lg" />
                     <div>
                       <h2 className="text-lg font-serif font-bold gradient-text">
-                        Ignite
+                        Igniting.ye
                       </h2>
                       <p className="text-xs font-accent text-neutral-600 dark:text-neutral-400 -mt-1">
-                        PRODUCTIONS
+                        CHRIST-CENTERED EXCELLENCE
                       </p>
                     </div>
                   </div>
@@ -389,7 +390,7 @@ export function Header() {
                       className="flex items-center space-x-2 text-neutral-600 dark:text-neutral-400 hover:text-primary-300 transition-colors"
                     >
                       <Mail className="w-4 h-4" />
-                      <span>hello@igniteproductions.com</span>
+                      <span>hello@igniting.ye</span>
                     </a>
                   </div>
                 </div>

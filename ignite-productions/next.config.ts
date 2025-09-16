@@ -6,9 +6,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  assetPrefix: process.env.NODE_ENV === 'production'
-    ? `https://danilstudio.github.io/Igniting.ye`
-    : '',
+  // Remove assetPrefix for Vercel deployment
+  // assetPrefix: process.env.NODE_ENV === 'production'
+  //   ? `https://danilstudio.github.io/Igniting.ye`
+  //   : '',
 };
 
 export default nextConfig;
