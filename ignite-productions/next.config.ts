@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  // Remove output: 'export' for Vercel deployment
+  // output: 'export',
   trailingSlash: true,
   images: {
     unoptimized: true
@@ -11,16 +12,6 @@ const nextConfig: NextConfig = {
   },
   typescript: {
     ignoreBuildErrors: true,
-  },
-  experimental: {
-    turbo: {
-      rules: {
-        '*.css': {
-          loaders: ['postcss-loader'],
-          as: '*.css',
-        },
-      },
-    },
   },
   // Remove assetPrefix for Vercel deployment
   // assetPrefix: process.env.NODE_ENV === 'production'
