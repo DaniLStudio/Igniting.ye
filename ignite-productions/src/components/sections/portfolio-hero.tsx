@@ -57,8 +57,8 @@ export function PortfolioHero() {
             key={i}
             className="absolute"
             initial={{ 
-              x: Math.random() * window.innerWidth, 
-              y: Math.random() * window.innerHeight,
+              x: Math.random() * 1200, 
+              y: Math.random() * 800,
               scale: 0,
             }}
             animate={{ 

@@ -29,7 +29,7 @@ export function AboutHero() {
       y: 0,
       opacity: 1,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         damping: 20,
         stiffness: 100,
       },
@@ -58,8 +58,8 @@ export function AboutHero() {
             key={i}
             className="absolute"
             initial={{ 
-              x: Math.random() * window.innerWidth, 
-              y: Math.random() * window.innerHeight,
+              x: Math.random() * 1200, 
+              y: Math.random() * 800,
               scale: 0,
             }}
             animate={{ 
