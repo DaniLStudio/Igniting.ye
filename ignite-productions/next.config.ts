@@ -12,6 +12,16 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  experimental: {
+    turbo: {
+      rules: {
+        '*.css': {
+          loaders: ['postcss-loader'],
+          as: '*.css',
+        },
+      },
+    },
+  },
   // Remove assetPrefix for Vercel deployment
   // assetPrefix: process.env.NODE_ENV === 'production'
   //   ? `https://danilstudio.github.io/Igniting.ye`
