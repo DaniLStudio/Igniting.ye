@@ -13,9 +13,9 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ 
-  showVideo = true, 
+  showVideo = false, 
   videoUrl = "/videos/hero-background.mp4",
-  fallbackImageUrl = "/images/hero-fallback.jpg"
+  fallbackImageUrl = "/images/formal-event.jpg"
 }: HeroSectionProps) {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
@@ -211,8 +211,8 @@ export function HeroSection({
         )}
         
         {/* Gradient Overlays for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
-        <div className="absolute inset-0 bg-luxury-gradient opacity-30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/40" />
+        <div className="absolute inset-0 bg-white/20" />
       </motion.div>
 
       {/* Floating Elements */}
