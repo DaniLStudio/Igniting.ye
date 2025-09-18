@@ -112,9 +112,7 @@ export function Header() {
         animate="animate"
         className={cn(
           'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
-          isScrolled
-            ? 'bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xl border-b border-white/20 dark:border-neutral-700/50'
-            : 'bg-transparent'
+          'bg-white backdrop-blur-xl border-b border-gray-200'
         )}
       >
         <nav className="max-width-content container-padding">
@@ -148,11 +146,9 @@ export function Header() {
                     href={item.href}
                     className={cn(
                       'px-4 py-2 rounded-full text-sm font-medium transition-all duration-200',
-                      'hover:bg-primary-300/10 hover:text-primary-300',
-                      'focus:outline-none focus:ring-2 focus:ring-primary-300/50',
-                      isScrolled
-                        ? 'text-black'
-                        : 'text-black'
+                      'hover:bg-gray-100 hover:text-black',
+                      'focus:outline-none focus:ring-2 focus:ring-gray-300',
+                      'text-black'
                     )}
                   >
                     {item.name}
@@ -174,10 +170,10 @@ export function Header() {
                               key={subitem.name}
                               href={subitem.href}
                               className={cn(
-                                'block px-4 py-3 text-sm transition-colors',
-                                'hover:bg-primary-300/10 hover:text-primary-300',
+                                'block px-4 py-3 text-sm transition-colors text-black',
+                                'hover:bg-gray-100 hover:text-black',
                                 'featured' in subitem && subitem.featured &&
-                                  'text-primary-300 font-semibold bg-primary-300/5'
+                                  'text-black font-semibold bg-gray-50'
                               )}
                             >
                               {subitem.name}
@@ -203,10 +199,10 @@ export function Header() {
                 <a
                   href="tel:+1234567890"
                   className={cn(
-                    'flex items-center space-x-2 hover:text-primary-300 transition-colors',
+                    'flex items-center space-x-2 hover:text-gray-600 transition-colors',
                     isScrolled
                       ? 'text-black'
-                      : 'text-black/80'
+                      : 'text-black'
                   )}
                 >
                   <Phone className="w-4 h-4" />
@@ -215,10 +211,10 @@ export function Header() {
                 <a
                   href="mailto:hello@igniting.ye"
                   className={cn(
-                    'flex items-center space-x-2 hover:text-primary-300 transition-colors',
+                    'flex items-center space-x-2 hover:text-gray-600 transition-colors',
                     isScrolled
                       ? 'text-black'
-                      : 'text-black/80'
+                      : 'text-black'
                   )}
                 >
                   <Mail className="w-4 h-4" />
@@ -301,11 +297,11 @@ export function Header() {
               initial="closed"
               animate="open"
               exit="closed"
-              className="fixed top-0 right-0 bottom-0 z-50 w-80 max-w-[90vw] bg-white/95 dark:bg-neutral-900/95 backdrop-blur-xl border-l border-white/20 dark:border-neutral-700/50 lg:hidden"
+              className="fixed top-0 right-0 bottom-0 z-50 w-80 max-w-[90vw] bg-white backdrop-blur-xl border-l border-gray-200 lg:hidden"
             >
               <div className="flex flex-col h-full">
                 {/* Mobile Menu Header */}
-                <div className="flex items-center justify-between p-6 border-b border-white/20 dark:border-neutral-700/50">
+                <div className="flex items-center justify-between p-6 border-b border-gray-200">
                   <div className="flex items-center space-x-3">
                     <div className="w-8 h-8 bg-luxury-gradient rounded-lg" />
                     <div>
@@ -319,7 +315,7 @@ export function Header() {
                   </div>
                   <button
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="p-2 rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+                    className="p-2 rounded-full hover:bg-gray-100 transition-colors"
                   >
                     <X className="w-5 h-5" />
                   </button>
@@ -333,7 +329,7 @@ export function Header() {
                         <Link
                           href={item.href}
                           onClick={() => setIsMobileMenuOpen(false)}
-                          className="block py-3 text-lg font-medium text-black hover:text-primary-300 transition-colors"
+                          className="block py-3 text-lg font-medium text-black hover:text-gray-600 transition-colors"
                         >
                           {item.name}
                         </Link>
@@ -347,8 +343,8 @@ export function Header() {
                                 className={cn(
                                   'block py-2 text-sm transition-colors',
                                   'featured' in subitem && subitem.featured
-                                    ? 'text-primary-300 font-semibold'
-                                    : 'text-black hover:text-primary-300'
+                                    ? 'text-black font-semibold'
+                                    : 'text-black hover:text-gray-600'
                                 )}
                               >
                                 {subitem.name}
@@ -367,7 +363,7 @@ export function Header() {
                 </nav>
 
                 {/* Mobile Menu Footer */}
-                <div className="p-6 border-t border-white/20 dark:border-neutral-700/50 space-y-4">
+                <div className="p-6 border-t border-gray-200 space-y-4">
                   <Link
                     href="/contact"
                     onClick={() => setIsMobileMenuOpen(false)}
@@ -380,14 +376,14 @@ export function Header() {
                   <div className="space-y-2 text-sm">
                     <a
                       href="tel:+1234567890"
-                      className="flex items-center space-x-2 text-black hover:text-primary-300 transition-colors"
+                      className="flex items-center space-x-2 text-black hover:text-gray-600 transition-colors"
                     >
                       <Phone className="w-4 h-4" />
                       <span>(123) 456-7890</span>
                     </a>
                     <a
                       href="mailto:hello@igniteproductions.com"
-                      className="flex items-center space-x-2 text-black hover:text-primary-300 transition-colors"
+                      className="flex items-center space-x-2 text-black hover:text-gray-600 transition-colors"
                     >
                       <Mail className="w-4 h-4" />
                       <span>hello@igniting.ye</span>

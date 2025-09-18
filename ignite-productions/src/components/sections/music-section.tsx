@@ -15,7 +15,7 @@ export function MusicSection() {
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white dark:bg-neutral-900">
+    <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
       <div className="max-width-content container-padding">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content */}

@@ -15,7 +15,7 @@ export function EventHostingSection() {
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-neutral-50 to-white dark:from-neutral-900 dark:to-neutral-800">
+    <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
       <div className="max-width-content container-padding">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Visual */}
