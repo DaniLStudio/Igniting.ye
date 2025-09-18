@@ -15,7 +15,7 @@ interface HeroSectionProps {
 export function HeroSection({ 
   showVideo = false, 
   videoUrl = "/videos/hero-background.mp4",
-  fallbackImageUrl = "/images/formal-event.jpg"
+  fallbackImageUrl = "/images/formal-event.svg"
 }: HeroSectionProps) {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
@@ -205,7 +205,7 @@ export function HeroSection({
           </>
         ) : (
           <img 
-            src="/images/formal-event.jpg"
+            src="/images/formal-event.svg"
             alt="Formal Event Background"
             className="absolute inset-0 w-full h-full object-cover"
           />

@@ -45,7 +45,7 @@ export function PortfolioHero() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/images/formal-event.jpg')`
+            backgroundImage: `url('/images/formal-event.svg')`
           }}
         />
       </div>
