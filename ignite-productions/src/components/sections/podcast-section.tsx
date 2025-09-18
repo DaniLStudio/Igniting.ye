@@ -40,7 +40,7 @@ export function PodcastSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.1 }}
-                className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 dark:text-white leading-tight"
+                className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-black leading-tight"
               >
                 Conversations That
                 <span className="block gradient-text">Ignite Purpose</span>
@@ -51,7 +51,7 @@ export function PodcastSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-xl text-neutral-600 dark:text-neutral-300 leading-relaxed"
+                className="text-xl text-black leading-relaxed"
               >
                 Join us for deep conversations about faith, purpose, and the stories 
                 that shape our lives. Each episode features inspiring guests and 
@@ -69,11 +69,11 @@ export function PodcastSection() {
             >
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary-300 mb-2">50+</div>
-                <div className="text-sm text-neutral-600 dark:text-neutral-400 uppercase tracking-wider">Episodes</div>
+                <div className="text-sm text-black uppercase tracking-wider">Episodes</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary-300 mb-2">10K+</div>
-                <div className="text-sm text-neutral-600 dark:text-neutral-400 uppercase tracking-wider">Listeners</div>
+                <div className="text-sm text-black uppercase tracking-wider">Listeners</div>
               </div>
             </motion.div>
 
@@ -113,15 +113,15 @@ export function PodcastSection() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-black">
                     <div className="w-24 h-24 bg-black rounded-full flex items-center justify-center mb-6 mx-auto shadow-subtle">
-                      <Play className="w-12 h-12 text-white" />
+                      <Play className="w-12 h-12 text-black" />
                     </div>
                     <h3 className="text-2xl font-serif font-bold mb-2">@IYEPOD</h3>
-                    <p className="text-gray-600 mb-4">YouTube Channel</p>
+                    <p className="text-black mb-4">YouTube Channel</p>
                     <a
                       href="https://www.youtube.com/@IYEPOD"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center space-x-2 px-6 py-3 bg-black text-white rounded-full font-semibold hover:bg-gray-800 transition-colors"
+                      className="inline-flex items-center space-x-2 px-6 py-3 bg-black text-black rounded-full font-semibold hover:bg-gray-800 transition-colors"
                     >
                       <span>Visit Channel</span>
                       <ExternalLink className="w-4 h-4" />
@@ -143,7 +143,7 @@ export function PodcastSection() {
                 }}
                 className="absolute -top-6 -left-6 w-28 h-28 bg-neutral-500/20 rounded-3xl backdrop-blur-sm border border-neutral-500/30 flex items-center justify-center"
               >
-                <Play className="w-10 h-10 text-neutral-500" />
+                <Play className="w-10 h-10 text-black" />
               </motion.div>
 
               <motion.div
@@ -159,7 +159,7 @@ export function PodcastSection() {
                 }}
                 className="absolute -bottom-6 -right-6 w-24 h-24 bg-neutral-600/20 rounded-3xl backdrop-blur-sm border border-neutral-600/30 flex items-center justify-center"
               >
-                <ThumbsUp className="w-8 h-8 text-neutral-600" />
+                <ThumbsUp className="w-8 h-8 text-black" />
               </motion.div>
             </div>
           </motion.div>

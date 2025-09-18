@@ -74,7 +74,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-gradient-to-b from-neutral-900 to-neutral-950 text-white">
+    <footer className="bg-white text-black">
       {/* Main Footer Content */}
       <div className="max-width-content container-padding section-padding">
         <motion.div
@@ -92,13 +92,13 @@ export function Footer() {
                 <h3 className="text-2xl font-serif font-bold gradient-text">
                   Igniting.ye
                 </h3>
-                <p className="text-xs font-accent text-neutral-400 -mt-1">
+                <p className="text-xs font-accent text-black -mt-1">
                   CHRIST-CENTERED EXCELLENCE
                 </p>
               </div>
             </div>
             
-            <p className="text-neutral-300 mb-6 leading-relaxed">
+            <p className="text-black mb-6 leading-relaxed">
               Christ-centered music production, live events, and creative services 
               rooted in Christian excellence. Creating unforgettable experiences 
               that glorify God.
@@ -106,15 +106,15 @@ export function Footer() {
 
             {/* Contact Info */}
             <div className="space-y-3">
-              <div className="flex items-center space-x-3 text-neutral-300">
+              <div className="flex items-center space-x-3 text-black">
                 <Phone className="w-4 h-4 text-primary-300" />
                 <span className="text-sm">(123) 456-7890</span>
               </div>
-              <div className="flex items-center space-x-3 text-neutral-300">
+              <div className="flex items-center space-x-3 text-black">
                 <Mail className="w-4 h-4 text-primary-300" />
                 <span className="text-sm">hello@igniting.ye</span>
               </div>
-              <div className="flex items-center space-x-3 text-neutral-300">
+              <div className="flex items-center space-x-3 text-black">
                 <MapPin className="w-4 h-4 text-primary-300" />
                 <span className="text-sm">Serving Nationwide</span>
               </div>
@@ -132,7 +132,7 @@ export function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-neutral-300 hover:text-primary-300 transition-colors duration-200 text-sm"
+                    className="text-black hover:text-primary-300 transition-colors duration-200 text-sm"
                   >
                     {link.name}
                   </Link>
@@ -152,7 +152,7 @@ export function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-neutral-300 hover:text-primary-300 transition-colors duration-200 text-sm"
+                    className="text-black hover:text-primary-300 transition-colors duration-200 text-sm"
                   >
                     {link.name}
                   </Link>
@@ -172,7 +172,7 @@ export function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-neutral-300 hover:text-primary-300 transition-colors duration-200 text-sm"
+                    className="text-black hover:text-primary-300 transition-colors duration-200 text-sm"
                   >
                     {link.name}
                   </Link>
@@ -180,7 +180,7 @@ export function Footer() {
               ))}
             </ul>
 
-            <h5 className="text-base font-semibold mb-4 text-neutral-200">
+            <h5 className="text-base font-semibold mb-4 text-black">
               Support
             </h5>
             <ul className="space-y-3">
@@ -188,7 +188,7 @@ export function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-neutral-300 hover:text-primary-300 transition-colors duration-200 text-sm"
+                    className="text-black hover:text-primary-300 transition-colors duration-200 text-sm"
                   >
                     {link.name}
                   </Link>
@@ -207,7 +207,7 @@ export function Footer() {
             <h3 className="text-2xl font-serif font-bold mb-4">
               Stay Connected
             </h3>
-            <p className="text-neutral-300 mb-6">
+            <p className="text-black mb-6">
               Get updates on upcoming events, exclusive content, and special offers 
               delivered to your inbox.
             </p>
@@ -215,7 +215,7 @@ export function Footer() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 form-input bg-white/90 text-neutral-900 placeholder-neutral-500"
+                className="flex-1 form-input bg-gray-50 text-black placeholder-neutral-500"
               />
               <button className="btn-primary whitespace-nowrap">
                 Subscribe
@@ -230,7 +230,7 @@ export function Footer() {
         <div className="max-width-content container-padding py-6">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             {/* Copyright */}
-            <div className="flex items-center space-x-2 text-neutral-400 text-sm">
+            <div className="flex items-center space-x-2 text-black text-sm">
               <span>© {currentYear} Igniting.ye. All rights reserved.</span>
               <Heart className="w-4 h-4 text-red-400" />
             </div>
@@ -241,7 +241,7 @@ export function Footer() {
                 <Link
                   key={social.name}
                   href={social.href}
-                  className="p-2 rounded-full bg-neutral-800 hover:bg-primary-300/20 text-neutral-400 hover:text-primary-300 transition-all duration-200"
+                  className="p-2 rounded-full bg-gray-100 hover:bg-primary-300/20 text-black hover:text-primary-300 transition-all duration-200"
                   aria-label={social.name}
                 >
                   <social.icon className="w-4 h-4" />
@@ -253,19 +253,19 @@ export function Footer() {
             <div className="flex items-center space-x-6 text-sm">
               <Link
                 href="/terms"
-                className="text-neutral-400 hover:text-primary-300 transition-colors"
+                className="text-black hover:text-primary-300 transition-colors"
               >
                 Terms
               </Link>
               <Link
                 href="/privacy"
-                className="text-neutral-400 hover:text-primary-300 transition-colors"
+                className="text-black hover:text-primary-300 transition-colors"
               >
                 Privacy
               </Link>
               <Link
                 href="/cookies"
-                className="text-neutral-400 hover:text-primary-300 transition-colors"
+                className="text-black hover:text-primary-300 transition-colors"
               >
                 Cookies
               </Link>

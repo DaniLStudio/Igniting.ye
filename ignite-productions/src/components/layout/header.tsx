@@ -129,7 +129,7 @@ export function Header() {
                 <h1 className="text-2xl font-serif font-bold gradient-text">
                   Igniting.ye
                 </h1>
-                <p className="text-xs font-accent text-neutral-600 dark:text-neutral-400 -mt-1">
+                <p className="text-xs font-accent text-black -mt-1">
                   CHRIST-CENTERED EXCELLENCE
                 </p>
               </div>
@@ -151,8 +151,8 @@ export function Header() {
                       'hover:bg-primary-300/10 hover:text-primary-300',
                       'focus:outline-none focus:ring-2 focus:ring-primary-300/50',
                       isScrolled
-                        ? 'text-neutral-700 dark:text-neutral-200'
-                        : 'text-white'
+                        ? 'text-black'
+                        : 'text-black'
                     )}
                   >
                     {item.name}
@@ -182,7 +182,7 @@ export function Header() {
                             >
                               {subitem.name}
                               {'featured' in subitem && subitem.featured && (
-                                <span className="ml-2 text-xs bg-primary-300 text-white px-2 py-0.5 rounded-full">
+                                <span className="ml-2 text-xs bg-primary-300 text-black px-2 py-0.5 rounded-full">
                                   Featured
                                 </span>
                               )}
@@ -205,8 +205,8 @@ export function Header() {
                   className={cn(
                     'flex items-center space-x-2 hover:text-primary-300 transition-colors',
                     isScrolled
-                      ? 'text-neutral-600 dark:text-neutral-400'
-                      : 'text-white/80'
+                      ? 'text-black'
+                      : 'text-black/80'
                   )}
                 >
                   <Phone className="w-4 h-4" />
@@ -217,8 +217,8 @@ export function Header() {
                   className={cn(
                     'flex items-center space-x-2 hover:text-primary-300 transition-colors',
                     isScrolled
-                      ? 'text-neutral-600 dark:text-neutral-400'
-                      : 'text-white/80'
+                      ? 'text-black'
+                      : 'text-black/80'
                   )}
                 >
                   <Mail className="w-4 h-4" />
@@ -248,8 +248,8 @@ export function Header() {
                   'lg:hidden p-2 rounded-full transition-colors',
                   'hover:bg-primary-300/10 focus:outline-none focus:ring-2 focus:ring-primary-300/50',
                   isScrolled
-                    ? 'text-neutral-700 dark:text-neutral-200'
-                    : 'text-white'
+                    ? 'text-black'
+                    : 'text-black'
                 )}
                 aria-label="Toggle mobile menu"
               >
@@ -312,7 +312,7 @@ export function Header() {
                       <h2 className="text-lg font-serif font-bold gradient-text">
                         Igniting.ye
                       </h2>
-                      <p className="text-xs font-accent text-neutral-600 dark:text-neutral-400 -mt-1">
+                      <p className="text-xs font-accent text-black -mt-1">
                         CHRIST-CENTERED EXCELLENCE
                       </p>
                     </div>
@@ -333,7 +333,7 @@ export function Header() {
                         <Link
                           href={item.href}
                           onClick={() => setIsMobileMenuOpen(false)}
-                          className="block py-3 text-lg font-medium text-neutral-700 dark:text-neutral-200 hover:text-primary-300 transition-colors"
+                          className="block py-3 text-lg font-medium text-black hover:text-primary-300 transition-colors"
                         >
                           {item.name}
                         </Link>
@@ -348,12 +348,12 @@ export function Header() {
                                   'block py-2 text-sm transition-colors',
                                   'featured' in subitem && subitem.featured
                                     ? 'text-primary-300 font-semibold'
-                                    : 'text-neutral-600 dark:text-neutral-400 hover:text-primary-300'
+                                    : 'text-black hover:text-primary-300'
                                 )}
                               >
                                 {subitem.name}
                                 {'featured' in subitem && subitem.featured && (
-                                  <span className="ml-2 text-xs bg-primary-300 text-white px-2 py-0.5 rounded-full">
+                                  <span className="ml-2 text-xs bg-primary-300 text-black px-2 py-0.5 rounded-full">
                                     Featured
                                   </span>
                                 )}
@@ -380,14 +380,14 @@ export function Header() {
                   <div className="space-y-2 text-sm">
                     <a
                       href="tel:+1234567890"
-                      className="flex items-center space-x-2 text-neutral-600 dark:text-neutral-400 hover:text-primary-300 transition-colors"
+                      className="flex items-center space-x-2 text-black hover:text-primary-300 transition-colors"
                     >
                       <Phone className="w-4 h-4" />
                       <span>(123) 456-7890</span>
                     </a>
                     <a
                       href="mailto:hello@igniteproductions.com"
-                      className="flex items-center space-x-2 text-neutral-600 dark:text-neutral-400 hover:text-primary-300 transition-colors"
+                      className="flex items-center space-x-2 text-black hover:text-primary-300 transition-colors"
                     >
                       <Mail className="w-4 h-4" />
                       <span>hello@igniting.ye</span>

@@ -30,15 +30,15 @@ export function YouTubeSection() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-black">
                     <div className="w-24 h-24 bg-black rounded-full flex items-center justify-center mb-6 mx-auto shadow-subtle">
-                      <Play className="w-12 h-12 text-white" />
+                      <Play className="w-12 h-12 text-black" />
                     </div>
                     <h3 className="text-2xl font-serif font-bold mb-2">@ignitingy.e</h3>
-                    <p className="text-gray-600 mb-4">YouTube Channel</p>
+                    <p className="text-black mb-4">YouTube Channel</p>
                     <a
                       href="https://www.youtube.com/@ignitingy.e/featured"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center space-x-2 px-6 py-3 bg-black text-white rounded-full font-semibold hover:bg-gray-800 transition-colors"
+                      className="inline-flex items-center space-x-2 px-6 py-3 bg-black text-black rounded-full font-semibold hover:bg-gray-800 transition-colors"
                     >
                       <span>Visit Channel</span>
                       <ExternalLink className="w-4 h-4" />
@@ -60,7 +60,7 @@ export function YouTubeSection() {
                 }}
                 className="absolute -top-6 -left-6 w-28 h-28 bg-neutral-500/20 rounded-3xl backdrop-blur-sm border border-neutral-500/30 flex items-center justify-center"
               >
-                <Play className="w-10 h-10 text-neutral-500" />
+                <Play className="w-10 h-10 text-black" />
               </motion.div>
 
               <motion.div
@@ -76,7 +76,7 @@ export function YouTubeSection() {
                 }}
                 className="absolute -bottom-6 -right-6 w-24 h-24 bg-neutral-600/20 rounded-3xl backdrop-blur-sm border border-neutral-600/30 flex items-center justify-center"
               >
-                <ThumbsUp className="w-8 h-8 text-neutral-600" />
+                <ThumbsUp className="w-8 h-8 text-black" />
               </motion.div>
             </div>
           </motion.div>
@@ -114,7 +114,7 @@ export function YouTubeSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-xl text-gray-600 leading-relaxed"
+                className="text-xl text-black leading-relaxed"
               >
                 Subscribe to our YouTube channel for exclusive content, behind-the-scenes 
                 footage, event highlights, and inspiring conversations. Join our community 
@@ -132,11 +132,11 @@ export function YouTubeSection() {
             >
               <div className="text-center">
                 <div className="text-3xl font-bold text-black mb-2">5K+</div>
-                <div className="text-sm text-gray-600 uppercase tracking-wider">Subscribers</div>
+                <div className="text-sm text-black uppercase tracking-wider">Subscribers</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-black mb-2">100+</div>
-                <div className="text-sm text-gray-600 uppercase tracking-wider">Videos</div>
+                <div className="text-sm text-black uppercase tracking-wider">Videos</div>
               </div>
             </motion.div>
 
@@ -150,19 +150,19 @@ export function YouTubeSection() {
             >
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-black rounded-full" />
-                <span className="text-neutral-600 dark:text-neutral-300">Weekly podcast episodes and interviews</span>
+                <span className="text-black dark:text-neutral-300">Weekly podcast episodes and interviews</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-black rounded-full" />
-                <span className="text-neutral-600 dark:text-neutral-300">Event highlights and behind-the-scenes content</span>
+                <span className="text-black dark:text-neutral-300">Event highlights and behind-the-scenes content</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-black rounded-full" />
-                <span className="text-neutral-600 dark:text-neutral-300">Music performances and production showcases</span>
+                <span className="text-black dark:text-neutral-300">Music performances and production showcases</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-black rounded-full" />
-                <span className="text-neutral-600 dark:text-neutral-300">Inspirational messages and faith-based content</span>
+                <span className="text-black dark:text-neutral-300">Inspirational messages and faith-based content</span>
               </div>
             </motion.div>
 

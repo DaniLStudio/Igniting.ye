@@ -51,7 +51,7 @@ export function DiscordSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-xl text-gray-600 leading-relaxed"
+                className="text-xl text-black leading-relaxed"
               >
                 Connect with like-minded individuals, share your faith journey, 
                 and be part of a supportive community that grows together in 
@@ -69,15 +69,15 @@ export function DiscordSection() {
             >
               <div className="text-center">
                 <div className="text-3xl font-bold text-black mb-2">500+</div>
-                <div className="text-sm text-gray-600 uppercase tracking-wider">Members</div>
+                <div className="text-sm text-black uppercase tracking-wider">Members</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-black mb-2">24/7</div>
-                <div className="text-sm text-gray-600 uppercase tracking-wider">Active</div>
+                <div className="text-sm text-black uppercase tracking-wider">Active</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-black mb-2">10+</div>
-                <div className="text-sm text-gray-600 uppercase tracking-wider">Channels</div>
+                <div className="text-sm text-black uppercase tracking-wider">Channels</div>
               </div>
             </motion.div>
 
@@ -91,19 +91,19 @@ export function DiscordSection() {
             >
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-black rounded-full" />
-                <span className="text-gray-600">Daily devotionals and prayer requests</span>
+                <span className="text-black">Daily devotionals and prayer requests</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-black rounded-full" />
-                <span className="text-gray-600">Event announcements and updates</span>
+                <span className="text-black">Event announcements and updates</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-black rounded-full" />
-                <span className="text-gray-600">Music sharing and collaboration</span>
+                <span className="text-black">Music sharing and collaboration</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-black rounded-full" />
-                <span className="text-gray-600">Study groups and Bible discussions</span>
+                <span className="text-black">Study groups and Bible discussions</span>
               </div>
             </motion.div>
 
@@ -143,11 +143,11 @@ export function DiscordSection() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-black">
                     <div className="w-24 h-24 bg-black rounded-full flex items-center justify-center mb-6 mx-auto shadow-subtle">
-                      <MessageCircle className="w-12 h-12 text-white" />
+                      <MessageCircle className="w-12 h-12 text-black" />
                     </div>
                     <h3 className="text-2xl font-serif font-bold mb-2">Igniting.ye Community</h3>
-                    <p className="text-gray-600 mb-4">Discord Server</p>
-                    <div className="space-y-2 text-sm text-gray-500">
+                    <p className="text-black mb-4">Discord Server</p>
+                    <div className="space-y-2 text-sm text-black">
                       <div className="flex items-center justify-center space-x-2">
                         <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                         <span>500+ members online</span>
@@ -161,7 +161,7 @@ export function DiscordSection() {
                       href="https://discord.gg/your-invite-link"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center space-x-2 px-6 py-3 bg-black text-white rounded-full font-semibold hover:bg-gray-800 transition-colors mt-6"
+                      className="inline-flex items-center space-x-2 px-6 py-3 bg-black text-black rounded-full font-semibold hover:bg-gray-800 transition-colors mt-6"
                     >
                       <span>Join Server</span>
                       <ExternalLink className="w-4 h-4" />
