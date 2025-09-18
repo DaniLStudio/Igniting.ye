@@ -8,42 +8,42 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Minimalist muted palette
+        // Apple-inspired elegant palette
         primary: {
-          50: '#fafafa',
-          100: '#f5f5f5',
-          200: '#e5e5e5',
-          300: '#a3a3a3',
-          400: '#737373',
-          500: '#525252', // Muted gray
-          600: '#404040',
-          700: '#262626',
-          800: '#171717',
-          900: '#0a0a0a',
+          50: '#ffffff',    // Pure white
+          100: '#fcfcfc',   // Silk white
+          200: '#f8f8f8',   // Cream white
+          300: '#f0f0f0',   // Light cream
+          400: '#dcdcdc',   // Soft gray
+          500: '#b4b4b4',   // Medium gray
+          600: '#787878',   // Dark gray
+          700: '#505050',   // Charcoal
+          800: '#282828',   // Dark charcoal
+          900: '#000000',   // Pure black
         },
         secondary: {
-          50: '#f8fafc',
-          100: '#f1f5f9',
-          200: '#e2e8f0',
-          300: '#cbd5e1',
-          400: '#94a3b8',
-          500: '#64748b', // Muted slate
-          600: '#475569',
-          700: '#334155',
-          800: '#1e293b',
-          900: '#0f172a',
+          50: '#ffffff',    // Pure white
+          100: '#fafafa',   // Silk white
+          200: '#f5f5f5',   // Cream
+          300: '#ebebeb',   // Light cream
+          400: '#c8c8c8',   // Soft gray
+          500: '#a0a0a0',   // Medium gray
+          600: '#646464',   // Dark gray
+          700: '#3c3c3c',   // Charcoal
+          800: '#1e1e1e',   // Dark charcoal
+          900: '#000000',   // Pure black
         },
         accent: {
-          50: '#f8fafc',
-          100: '#f1f5f9',
-          200: '#e2e8f0',
-          300: '#cbd5e1',
-          400: '#94a3b8',
-          500: '#64748b', // Muted accent
-          600: '#475569',
-          700: '#334155',
-          800: '#1e293b',
-          900: '#0f172a',
+          50: '#ffffff',    // Pure white
+          100: '#fafafa',   // Silk white
+          200: '#f5f5f5',   // Cream
+          300: '#ebebeb',   // Light cream
+          400: '#c8c8c8',   // Soft gray
+          500: '#a0a0a0',   // Medium gray
+          600: '#646464',   // Dark gray
+          700: '#3c3c3c',   // Charcoal
+          800: '#1e1e1e',   // Dark charcoal
+          900: '#000000',   // Pure black
         },
         neutral: {
           50: '#fafafa',
@@ -60,9 +60,9 @@ module.exports = {
         },
       },
       fontFamily: {
-        serif: ['Playfair Display', 'serif'],
-        sans: ['Inter', 'sans-serif'],
-        accent: ['Montserrat', 'sans-serif'],
+        serif: ['SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        sans: ['SF Pro Text', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        accent: ['SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
       },
       animation: {
         'gradient': 'gradient 8s linear infinite',
@@ -104,9 +104,11 @@ module.exports = {
         '3xl': '40px',
       },
       boxShadow: {
-        'luxury': '0 25px 50px -12px rgba(82, 82, 82, 0.15)',
-        'glow-gold': '0 0 20px rgba(82, 82, 82, 0.3)',
-        'glow-purple': '0 0 20px rgba(100, 116, 139, 0.3)',
+        'luxury': '0 4px 20px rgba(0, 0, 0, 0.08)',
+        'glow-gold': '0 2px 10px rgba(0, 0, 0, 0.1)',
+        'glow-purple': '0 2px 10px rgba(0, 0, 0, 0.1)',
+        'subtle': '0 1px 3px rgba(0, 0, 0, 0.05)',
+        'elegant': '0 8px 30px rgba(0, 0, 0, 0.12)',
         '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
       },
     },
