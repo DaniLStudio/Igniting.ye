@@ -108,7 +108,7 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#2d1b69" />
       </head>
-      <body className="min-h-screen bg-gradient-to-b from-neutral-50 to-neutral-100 dark:from-neutral-950 dark:to-neutral-900 font-sans antialiased">
+      <body className="min-h-screen bg-white font-sans antialiased">
         <Providers>
           <div className="relative flex min-h-screen flex-col">
             <Header />

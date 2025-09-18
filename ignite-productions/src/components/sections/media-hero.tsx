@@ -8,8 +8,7 @@ export function MediaHero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900" />
-        <div className="absolute inset-0 bg-luxury-gradient opacity-20" />
+        <div className="absolute inset-0 bg-white" />
       </div>
 
       {/* Floating Elements */}
@@ -34,7 +33,7 @@ export function MediaHero() {
               delay: Math.random() * 2,
             }}
           >
-            <div className="w-2 h-2 bg-primary-300/30 rounded-full" />
+            <div className="w-2 h-2 bg-gray-300 rounded-full" />
           </motion.div>
         ))}
       </div>
@@ -47,7 +46,7 @@ export function MediaHero() {
           transition={{ duration: 0.8 }}
           className="mb-8"
         >
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-white leading-none tracking-tight luxury-text-shadow">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-black leading-none tracking-tight">
             MEDIA
           </h1>
         </motion.div>
@@ -58,10 +57,10 @@ export function MediaHero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-12 max-w-4xl mx-auto"
         >
-          <p className="text-xl sm:text-2xl md:text-3xl text-white/90 font-light leading-relaxed mb-4">
+          <p className="text-xl sm:text-2xl md:text-3xl text-gray-600 font-light leading-relaxed mb-4">
             Stories, Sounds & Experiences
           </p>
-          <p className="text-lg sm:text-xl text-white/70 font-light max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-500 font-light max-w-2xl mx-auto">
             Dive into our world of podcasts, event hosting, and music production. 
             Discover the stories behind the scenes and the people who make it all happen.
           </p>
@@ -75,37 +74,37 @@ export function MediaHero() {
           className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto"
         >
           <div className="text-center group">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4 group-hover:bg-white/20 transition-all duration-300">
-              <Mic className="w-10 h-10 text-primary-300" />
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gray-100 backdrop-blur-sm border border-gray-200 mb-4 group-hover:bg-gray-200 transition-all duration-300">
+              <Mic className="w-10 h-10 text-gray-600" />
             </div>
-            <div className="text-2xl sm:text-3xl font-serif font-bold text-white mb-2 group-hover:text-primary-300 transition-colors">
+            <div className="text-2xl sm:text-3xl font-serif font-bold text-black mb-2 group-hover:text-gray-600 transition-colors">
               Podcasts
             </div>
-            <div className="text-sm sm:text-base text-white/70 font-medium uppercase tracking-wider">
+            <div className="text-sm sm:text-base text-gray-500 font-medium uppercase tracking-wider">
               Conversations That Matter
             </div>
           </div>
 
           <div className="text-center group">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4 group-hover:bg-white/20 transition-all duration-300">
-              <Users className="w-10 h-10 text-primary-300" />
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gray-100 backdrop-blur-sm border border-gray-200 mb-4 group-hover:bg-gray-200 transition-all duration-300">
+              <Users className="w-10 h-10 text-gray-600" />
             </div>
-            <div className="text-2xl sm:text-3xl font-serif font-bold text-white mb-2 group-hover:text-primary-300 transition-colors">
+            <div className="text-2xl sm:text-3xl font-serif font-bold text-black mb-2 group-hover:text-gray-600 transition-colors">
               Events
             </div>
-            <div className="text-sm sm:text-base text-white/70 font-medium uppercase tracking-wider">
+            <div className="text-sm sm:text-base text-gray-500 font-medium uppercase tracking-wider">
               Hosting Excellence
             </div>
           </div>
 
           <div className="text-center group">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4 group-hover:bg-white/20 transition-all duration-300">
-              <Music className="w-10 h-10 text-primary-300" />
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gray-100 backdrop-blur-sm border border-gray-200 mb-4 group-hover:bg-gray-200 transition-all duration-300">
+              <Music className="w-10 h-10 text-gray-600" />
             </div>
-            <div className="text-2xl sm:text-3xl font-serif font-bold text-white mb-2 group-hover:text-primary-300 transition-colors">
+            <div className="text-2xl sm:text-3xl font-serif font-bold text-black mb-2 group-hover:text-gray-600 transition-colors">
               Music
             </div>
-            <div className="text-sm sm:text-base text-white/70 font-medium uppercase tracking-wider">
+            <div className="text-sm sm:text-base text-gray-500 font-medium uppercase tracking-wider">
               Sound & Soul
             </div>
           </div>
@@ -118,14 +117,14 @@ export function MediaHero() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="absolute bottom-2 left-1/2 transform -translate-x-1/2"
         >
-          <div className="flex flex-col items-center space-y-2 text-white/60">
+          <div className="flex flex-col items-center space-y-2 text-gray-500">
             <span className="text-sm font-medium">Scroll to explore</span>
             <motion.div
               animate={{ y: [0, 8, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
-              className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center"
+              className="w-6 h-10 border-2 border-gray-300 rounded-full flex justify-center"
             >
-              <div className="w-1 h-3 bg-white/60 rounded-full mt-2" />
+              <div className="w-1 h-3 bg-gray-500 rounded-full mt-2" />
             </motion.div>
           </div>
         </motion.div>

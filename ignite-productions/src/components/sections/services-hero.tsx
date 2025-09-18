@@ -37,7 +37,7 @@ export function ServicesHero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-neutral-50 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div 
