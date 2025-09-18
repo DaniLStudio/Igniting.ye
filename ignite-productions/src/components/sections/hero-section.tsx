@@ -204,9 +204,10 @@ export function HeroSection({
             />
           </>
         ) : (
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${fallbackImageUrl})` }}
+          <img 
+            src="/images/formal-event.jpg"
+            alt="Formal Event Background"
+            className="absolute inset-0 w-full h-full object-cover"
           />
         )}
         
