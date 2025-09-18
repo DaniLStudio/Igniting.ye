@@ -15,7 +15,7 @@ export function PodcastSection() {
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white dark:bg-neutral-900">
+          <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
       <div className="max-width-content container-padding">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
@@ -108,20 +108,20 @@ export function PodcastSection() {
           >
             <div className="relative">
               {/* YouTube Channel Embed */}
-              <div className="relative w-full h-[400px] rounded-3xl overflow-hidden bg-gradient-to-br from-neutral-600 to-neutral-700 shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-neutral-600/90 to-neutral-700/90" />
+              <div className="relative w-full h-[400px] rounded-2xl overflow-hidden bg-white shadow-elegant border border-gray-100">
+                <div className="absolute inset-0 bg-gradient-to-br from-white to-primary-100" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mb-6 mx-auto backdrop-blur-sm border border-white/30">
+                  <div className="text-center text-black">
+                    <div className="w-24 h-24 bg-black rounded-full flex items-center justify-center mb-6 mx-auto shadow-subtle">
                       <Play className="w-12 h-12 text-white" />
                     </div>
                     <h3 className="text-2xl font-serif font-bold mb-2">@IYEPOD</h3>
-                    <p className="text-white/90 mb-4">YouTube Channel</p>
+                    <p className="text-gray-600 mb-4">YouTube Channel</p>
                     <a
                       href="https://www.youtube.com/@IYEPOD"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center space-x-2 px-6 py-3 bg-white text-neutral-600 rounded-full font-semibold hover:bg-white/90 transition-colors"
+                      className="inline-flex items-center space-x-2 px-6 py-3 bg-black text-white rounded-full font-semibold hover:bg-gray-800 transition-colors"
                     >
                       <span>Visit Channel</span>
                       <ExternalLink className="w-4 h-4" />
