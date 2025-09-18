@@ -8,42 +8,42 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Envy-inspired luxury palette
+        // Minimalist muted palette
         primary: {
-          50: '#faf7ed',
-          100: '#f4ecda',
-          200: '#e8d5b4',
-          300: '#d4af37', // Gold
-          400: '#b8941f',
-          500: '#9d7b16',
-          600: '#7d620f',
-          700: '#5e4a0b',
-          800: '#3f3107',
-          900: '#1f1804',
+          50: '#fafafa',
+          100: '#f5f5f5',
+          200: '#e5e5e5',
+          300: '#a3a3a3',
+          400: '#737373',
+          500: '#525252', // Muted gray
+          600: '#404040',
+          700: '#262626',
+          800: '#171717',
+          900: '#0a0a0a',
         },
         secondary: {
-          50: '#f0f0ff',
-          100: '#e0e0ff',
-          200: '#c2c2ff',
-          300: '#9999ff',
-          400: '#6666ff',
-          500: '#2d1b69', // Deep purple
-          600: '#241556',
-          700: '#1b1043',
-          800: '#120a30',
-          900: '#09051d',
+          50: '#f8fafc',
+          100: '#f1f5f9',
+          200: '#e2e8f0',
+          300: '#cbd5e1',
+          400: '#94a3b8',
+          500: '#64748b', // Muted slate
+          600: '#475569',
+          700: '#334155',
+          800: '#1e293b',
+          900: '#0f172a',
         },
         accent: {
-          50: '#e0ffff',
-          100: '#b3ffff',
-          200: '#80ffff',
-          300: '#4dffff',
-          400: '#1affff',
-          500: '#00ffff', // Cyan
-          600: '#00cccc',
-          700: '#009999',
-          800: '#006666',
-          900: '#003333',
+          50: '#f8fafc',
+          100: '#f1f5f9',
+          200: '#e2e8f0',
+          300: '#cbd5e1',
+          400: '#94a3b8',
+          500: '#64748b', // Muted accent
+          600: '#475569',
+          700: '#334155',
+          800: '#1e293b',
+          900: '#0f172a',
         },
         neutral: {
           50: '#fafafa',
@@ -90,8 +90,8 @@ module.exports = {
           '50%': { transform: 'translateY(-20px)' },
         },
         glow: {
-          'from': { boxShadow: '0 0 20px #d4af37' },
-          'to': { boxShadow: '0 0 30px #d4af37, 0 0 40px #d4af37' },
+          'from': { boxShadow: '0 0 20px #525252' },
+          'to': { boxShadow: '0 0 30px #525252, 0 0 40px #525252' },
         },
       },
       backdropBlur: {
@@ -104,9 +104,9 @@ module.exports = {
         '3xl': '40px',
       },
       boxShadow: {
-        'luxury': '0 25px 50px -12px rgba(212, 175, 55, 0.25)',
-        'glow-gold': '0 0 20px rgba(212, 175, 55, 0.5)',
-        'glow-purple': '0 0 20px rgba(45, 27, 105, 0.5)',
+        'luxury': '0 25px 50px -12px rgba(82, 82, 82, 0.15)',
+        'glow-gold': '0 0 20px rgba(82, 82, 82, 0.3)',
+        'glow-purple': '0 0 20px rgba(100, 116, 139, 0.3)',
         '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
       },
     },

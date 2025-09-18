@@ -15,7 +15,7 @@ export function DiscordSection() {
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-900">
+    <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-neutral-800 via-neutral-700 to-neutral-800">
       <div className="max-width-content container-padding">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
@@ -29,10 +29,10 @@ export function DiscordSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20"
+                className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-neutral-500/10 border border-neutral-500/20"
               >
-                <MessageCircle className="w-4 h-4 text-indigo-400" />
-                <span className="text-sm font-medium text-indigo-400">DISCORD COMMUNITY</span>
+                <MessageCircle className="w-4 h-4 text-neutral-400" />
+                <span className="text-sm font-medium text-neutral-400">DISCORD COMMUNITY</span>
               </motion.div>
 
               <motion.h2
@@ -51,7 +51,7 @@ export function DiscordSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-xl text-indigo-200 leading-relaxed"
+                className="text-xl text-neutral-200 leading-relaxed"
               >
                 Connect with like-minded individuals, share your faith journey, 
                 and be part of a supportive community that grows together in 
@@ -68,16 +68,16 @@ export function DiscordSection() {
               className="grid grid-cols-3 gap-8"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-400 mb-2">500+</div>
-                <div className="text-sm text-indigo-300 uppercase tracking-wider">Members</div>
+                <div className="text-3xl font-bold text-neutral-400 mb-2">500+</div>
+                <div className="text-sm text-neutral-300 uppercase tracking-wider">Members</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-400 mb-2">24/7</div>
-                <div className="text-sm text-indigo-300 uppercase tracking-wider">Active</div>
+                <div className="text-3xl font-bold text-neutral-400 mb-2">24/7</div>
+                <div className="text-sm text-neutral-300 uppercase tracking-wider">Active</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-400 mb-2">10+</div>
-                <div className="text-sm text-indigo-300 uppercase tracking-wider">Channels</div>
+                <div className="text-3xl font-bold text-neutral-400 mb-2">10+</div>
+                <div className="text-sm text-neutral-300 uppercase tracking-wider">Channels</div>
               </div>
             </motion.div>
 
@@ -90,20 +90,20 @@ export function DiscordSection() {
               className="space-y-4"
             >
               <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-indigo-400 rounded-full" />
-                <span className="text-indigo-200">Daily devotionals and prayer requests</span>
+                <div className="w-2 h-2 bg-neutral-400 rounded-full" />
+                <span className="text-neutral-200">Daily devotionals and prayer requests</span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-indigo-400 rounded-full" />
-                <span className="text-indigo-200">Event announcements and updates</span>
+                <div className="w-2 h-2 bg-neutral-400 rounded-full" />
+                <span className="text-neutral-200">Event announcements and updates</span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-indigo-400 rounded-full" />
-                <span className="text-indigo-200">Music sharing and collaboration</span>
+                <div className="w-2 h-2 bg-neutral-400 rounded-full" />
+                <span className="text-neutral-200">Music sharing and collaboration</span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-indigo-400 rounded-full" />
-                <span className="text-indigo-200">Study groups and Bible discussions</span>
+                <div className="w-2 h-2 bg-neutral-400 rounded-full" />
+                <span className="text-neutral-200">Study groups and Bible discussions</span>
               </div>
             </motion.div>
 
@@ -119,12 +119,12 @@ export function DiscordSection() {
                 href="https://discord.gg/your-invite-link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary flex items-center justify-center space-x-2 bg-indigo-600 hover:bg-indigo-700"
+                className="btn-primary flex items-center justify-center space-x-2 bg-neutral-600 hover:bg-neutral-700"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>Join Discord</span>
               </a>
-              <button className="btn-secondary flex items-center justify-center space-x-2 border-indigo-400 text-indigo-400 hover:bg-indigo-400 hover:text-white">
+              <button className="btn-secondary flex items-center justify-center space-x-2 border-neutral-400 text-neutral-400 hover:bg-neutral-400 hover:text-white">
                 <ExternalLink className="w-4 h-4" />
                 <span>Learn More</span>
               </button>
@@ -142,7 +142,7 @@ export function DiscordSection() {
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-800/90 to-gray-900/90" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white">
-                    <div className="w-24 h-24 bg-indigo-600 rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg">
+                    <div className="w-24 h-24 bg-neutral-600 rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg">
                       <MessageCircle className="w-12 h-12 text-white" />
                     </div>
                     <h3 className="text-2xl font-serif font-bold mb-2">Igniting.ye Community</h3>
@@ -161,7 +161,7 @@ export function DiscordSection() {
                       href="https://discord.gg/your-invite-link"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center space-x-2 px-6 py-3 bg-indigo-600 text-white rounded-full font-semibold hover:bg-indigo-700 transition-colors mt-6"
+                      className="inline-flex items-center space-x-2 px-6 py-3 bg-neutral-600 text-white rounded-full font-semibold hover:bg-neutral-700 transition-colors mt-6"
                     >
                       <span>Join Server</span>
                       <ExternalLink className="w-4 h-4" />
@@ -181,9 +181,9 @@ export function DiscordSection() {
                   repeat: Infinity,
                   ease: "easeInOut"
                 }}
-                className="absolute -top-6 -left-6 w-28 h-28 bg-indigo-500/20 rounded-3xl backdrop-blur-sm border border-indigo-500/30 flex items-center justify-center"
+                className="absolute -top-6 -left-6 w-28 h-28 bg-neutral-500/20 rounded-3xl backdrop-blur-sm border border-neutral-500/30 flex items-center justify-center"
               >
-                <Users className="w-10 h-10 text-indigo-500" />
+                <Users className="w-10 h-10 text-neutral-500" />
               </motion.div>
 
               <motion.div

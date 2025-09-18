@@ -25,8 +25,8 @@ export function YouTubeSection() {
           >
             <div className="relative">
               {/* YouTube Channel Embed */}
-              <div className="relative w-full h-[400px] rounded-3xl overflow-hidden bg-gradient-to-br from-red-500 to-red-600 shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-red-500/90 to-red-600/90" />
+              <div className="relative w-full h-[400px] rounded-3xl overflow-hidden bg-gradient-to-br from-neutral-600 to-neutral-700 shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-br from-neutral-600/90 to-neutral-700/90" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white">
                     <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mb-6 mx-auto backdrop-blur-sm border border-white/30">
@@ -38,7 +38,7 @@ export function YouTubeSection() {
                       href="https://www.youtube.com/@ignitingy.e/featured"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center space-x-2 px-6 py-3 bg-white text-red-600 rounded-full font-semibold hover:bg-white/90 transition-colors"
+                      className="inline-flex items-center space-x-2 px-6 py-3 bg-white text-neutral-600 rounded-full font-semibold hover:bg-white/90 transition-colors"
                     >
                       <span>Visit Channel</span>
                       <ExternalLink className="w-4 h-4" />
@@ -58,9 +58,9 @@ export function YouTubeSection() {
                   repeat: Infinity,
                   ease: "easeInOut"
                 }}
-                className="absolute -top-6 -left-6 w-28 h-28 bg-red-500/20 rounded-3xl backdrop-blur-sm border border-red-500/30 flex items-center justify-center"
+                className="absolute -top-6 -left-6 w-28 h-28 bg-neutral-500/20 rounded-3xl backdrop-blur-sm border border-neutral-500/30 flex items-center justify-center"
               >
-                <Play className="w-10 h-10 text-red-500" />
+                <Play className="w-10 h-10 text-neutral-500" />
               </motion.div>
 
               <motion.div
@@ -74,9 +74,9 @@ export function YouTubeSection() {
                   ease: "easeInOut",
                   delay: 1.5
                 }}
-                className="absolute -bottom-6 -right-6 w-24 h-24 bg-red-600/20 rounded-3xl backdrop-blur-sm border border-red-600/30 flex items-center justify-center"
+                className="absolute -bottom-6 -right-6 w-24 h-24 bg-neutral-600/20 rounded-3xl backdrop-blur-sm border border-neutral-600/30 flex items-center justify-center"
               >
-                <ThumbsUp className="w-8 h-8 text-red-600" />
+                <ThumbsUp className="w-8 h-8 text-neutral-600" />
               </motion.div>
             </div>
           </motion.div>
@@ -92,10 +92,10 @@ export function YouTubeSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-red-500/10 border border-red-500/20"
+                className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-neutral-500/10 border border-neutral-500/20"
               >
-                <Play className="w-4 h-4 text-red-500" />
-                <span className="text-sm font-medium text-red-500">YOUTUBE CHANNEL</span>
+                <Play className="w-4 h-4 text-neutral-500" />
+                <span className="text-sm font-medium text-neutral-500">YOUTUBE CHANNEL</span>
               </motion.div>
 
               <motion.h2
@@ -131,11 +131,11 @@ export function YouTubeSection() {
               className="grid grid-cols-2 gap-8"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-red-500 mb-2">5K+</div>
+                <div className="text-3xl font-bold text-neutral-500 mb-2">5K+</div>
                 <div className="text-sm text-neutral-600 dark:text-neutral-400 uppercase tracking-wider">Subscribers</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-red-500 mb-2">100+</div>
+                <div className="text-3xl font-bold text-neutral-500 mb-2">100+</div>
                 <div className="text-sm text-neutral-600 dark:text-neutral-400 uppercase tracking-wider">Videos</div>
               </div>
             </motion.div>
@@ -149,19 +149,19 @@ export function YouTubeSection() {
               className="space-y-4"
             >
               <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-red-500 rounded-full" />
+                <div className="w-2 h-2 bg-neutral-500 rounded-full" />
                 <span className="text-neutral-600 dark:text-neutral-300">Weekly podcast episodes and interviews</span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-red-500 rounded-full" />
+                <div className="w-2 h-2 bg-neutral-500 rounded-full" />
                 <span className="text-neutral-600 dark:text-neutral-300">Event highlights and behind-the-scenes content</span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-red-500 rounded-full" />
+                <div className="w-2 h-2 bg-neutral-500 rounded-full" />
                 <span className="text-neutral-600 dark:text-neutral-300">Music performances and production showcases</span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-red-500 rounded-full" />
+                <div className="w-2 h-2 bg-neutral-500 rounded-full" />
                 <span className="text-neutral-600 dark:text-neutral-300">Inspirational messages and faith-based content</span>
               </div>
             </motion.div>
@@ -178,7 +178,7 @@ export function YouTubeSection() {
                 href="https://www.youtube.com/@ignitingy.e/featured"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary flex items-center justify-center space-x-2 bg-red-500 hover:bg-red-600"
+                className="btn-primary flex items-center justify-center space-x-2 bg-neutral-500 hover:bg-neutral-600"
               >
                 <Play className="w-4 h-4" />
                 <span>Subscribe Now</span>
