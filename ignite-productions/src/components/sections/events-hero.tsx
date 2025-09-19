@@ -58,7 +58,7 @@ export function EventsHero() {
       {/* Background Image - Using the home background photo */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/images/home-background.jpeg?v=2"
+          src="/images/home-background.jpeg?v=3"
           alt="Events Background - Elegant Formal Event"
           className="absolute inset-0 w-full h-full object-cover"
         />
