@@ -54,17 +54,13 @@ export function EventsHero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-neutral-50 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div 
-          className="w-full h-full"
-          style={{
-            backgroundImage: `
-              radial-gradient(circle at 25% 25%, rgba(212, 175, 55, 0.3) 0%, transparent 50%),
-              radial-gradient(circle at 75% 75%, rgba(45, 27, 105, 0.3) 0%, transparent 50%)
-            `,
-          }}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image - Using the home background photo */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/images/home-background.jpeg?v=2"
+          alt="Events Background - Elegant Formal Event"
+          className="absolute inset-0 w-full h-full object-cover"
         />
       </div>
 
@@ -90,7 +86,7 @@ export function EventsHero() {
               delay: i * 0.5,
             }}
           >
-            <Sparkles className="w-6 h-6 text-primary-300/20" />
+            <Sparkles className="w-6 h-6 text-white/30" />
           </motion.div>
         ))}
       </div>
@@ -107,10 +103,10 @@ export function EventsHero() {
             {/* Badge */}
             <motion.div
               variants={itemVariants}
-              className="inline-flex items-center space-x-2 bg-primary-300/10 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-primary-300/20"
+              className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-white/30"
             >
-              <Calendar className="w-5 h-5 text-primary-300" />
-              <span className="text-primary-300 font-medium uppercase tracking-wider text-sm">
+              <Calendar className="w-5 h-5 text-white" />
+              <span className="text-white font-medium uppercase tracking-wider text-sm">
                 Upcoming Events
               </span>
             </motion.div>
@@ -118,10 +114,11 @@ export function EventsHero() {
             {/* Main Title */}
             <motion.h1
               variants={itemVariants}
-              className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold gradient-text mb-8 leading-none tracking-tight"
+              className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-8 leading-none tracking-tight"
+              style={{ textShadow: '0 4px 8px rgba(0, 0, 0, 0.6)' }}
             >
               Join Us for
-              <span className="block bg-gradient-to-r from-primary-400 to-secondary-500 bg-clip-text text-transparent">
+              <span className="block text-white">
                 Amazing Events
               </span>
             </motion.h1>
@@ -129,7 +126,8 @@ export function EventsHero() {
             {/* Subtitle */}
             <motion.p
               variants={itemVariants}
-              className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-300 font-light leading-relaxed mb-8"
+              className="text-xl md:text-2xl text-white/90 font-light leading-relaxed mb-8"
+              style={{ textShadow: '0 2px 4px rgba(0, 0, 0, 0.6)' }}
             >
               From intimate worship gatherings to grand celebrations, 
               we create unforgettable experiences that bring our community together in faith and fellowship.
@@ -162,8 +160,8 @@ export function EventsHero() {
                 key={event.title}
                 variants={itemVariants}
                 className={cn(
-                  "luxury-card p-6 relative overflow-hidden",
-                  event.featured && "ring-2 ring-primary-300/50 bg-gradient-to-r from-primary-500/5 to-secondary-500/5"
+                  "luxury-card p-6 relative overflow-hidden bg-white/95 backdrop-blur-sm",
+                  event.featured && "ring-2 ring-primary-300/50 bg-gradient-to-r from-primary-500/10 to-secondary-500/10"
                 )}
               >
                 {event.featured && (
@@ -174,20 +172,20 @@ export function EventsHero() {
                 
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h3 className="text-2xl font-serif font-bold text-neutral-900 dark:text-neutral-100 mb-2">
+                    <h3 className="text-2xl font-serif font-bold text-black mb-2">
                       {event.title}
                     </h3>
-                    <div className="space-y-2 text-sm text-neutral-600 dark:text-neutral-400">
+                    <div className="space-y-2 text-sm text-gray-700">
                       <div className="flex items-center space-x-2">
-                        <Calendar className="w-4 h-4" />
+                        <Calendar className="w-4 h-4 text-gray-600" />
                         <span>{event.date}</span>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <Clock className="w-4 h-4" />
+                        <Clock className="w-4 h-4 text-gray-600" />
                         <span>{event.time}</span>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <MapPin className="w-4 h-4" />
+                        <MapPin className="w-4 h-4 text-gray-600" />
                         <span>{event.location}</span>
                       </div>
                     </div>
@@ -197,11 +195,11 @@ export function EventsHero() {
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="flex items-center space-x-2 mb-2">
-                      <span className="text-2xl font-bold text-primary-300">
+                      <span className="text-2xl font-bold text-black">
                         {event.price}
                       </span>
                       {event.originalPrice && (
-                        <span className="text-lg text-neutral-400 line-through">
+                        <span className="text-lg text-gray-500 line-through">
                           {event.originalPrice}
                         </span>
                       )}
